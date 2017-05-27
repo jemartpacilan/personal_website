@@ -1,0 +1,440 @@
+html, body {
+	/*overflow: hidden; /* Disable scrolling */*/
+}
+
+body {
+	/* Remove margins and all that */
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+#header {
+	width: 100%;
+	position: absolute;
+	z-index: 500000;
+}
+
+#header ul {
+	list-style: none;
+	margin: 40px 20px 20px 20px;
+	font-family: Arial, sans-serif;
+	padding: 0 10px;
+	float: right;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+#header ul li {
+	float: left;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+#header ul li a {
+	text-decoration: none;
+	padding: 10px;
+}
+
+.light .current {
+	background: #000;
+	border-radius: 5px;
+}
+
+.dark .current {
+	background: #fff;
+	border-radius: 5px;
+}
+
+.dark h1, .dark ul li a {
+	color: #000;
+}
+.light h1, .light ul li a {
+	color: #fff;
+}
+
+#header h1 {
+	padding: 0 0 0 20px;
+	font-family: 'Bree Serif', Georgia, serif;
+	text-transform: uppercase;
+	font-size: 3.5em;
+	margin: 20px 0 0 0;
+	float: left;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	text-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.share {
+	position: fixed;
+	bottom: 20px;
+	z-index: 5000;
+	right: 20px;
+}
+
+.posit-g {
+	position: relative;
+	right: 15px;
+	top: 4px;
+	float: left;
+}
+
+.is {
+	font-family: 'Bree Serif', Georgia, serif;
+	font-size: 3.5em;
+	position: relative;
+	display: inline-block;
+	left: 365px;
+	top: 20px;
+	color: #fff;
+}
+
+/*.content {
+	position: relative;
+	top: 130px;
+}*/
+
+/* ----- HOME PAGE ----- */
+
+#home {
+	background: url(home.jpg) bottom center no-repeat #000;
+	/*background-color: #3097b9;
+	box-shadow: inset 0 250px 600px #59C1D9, 0px 0px 60px rgba(0, 0, 0, 0.4);
+	position: relative;
+	z-index: 500;*/
+	background-size: cover;
+}
+
+/* ----- ABOUT PAGE ----- */
+
+/* The background */
+#about {
+	background-color: #3b3b3b;
+	box-shadow: inset 0px -40px 60px -30px rgba(0, 0, 0, 0.4);
+	position: relative;
+	overflow: hidden;
+}
+
+/* Change the background into circles */
+.circle, .circle-2 {
+	display: block;
+	border-radius: 200px;
+	box-shadow: 0px 0px 100px rgba(255,255,255,0.3), inset 0px 0px 10px rgba(255,255,255,0.2);
+	position: absolute;
+	background: #fff;
+}
+
+/* The content */
+#about .content {
+	margin: auto;
+	 margin-top: 150px;
+	 text-align: center;
+	color: #fff;
+	width: 420px;
+	top: 50;
+	font-family: 'Bree Serif', Georgia, serif;
+}
+
+/* Text related */
+#about .content h2 {
+	font-size: 3em;
+	font-weight: lighter;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+
+
+/* Positioning of the background */
+#about .background-2 {
+	width: 40%;
+	position: absolute;
+	bottom: 0;
+	height: 300px;
+	right: 0;
+	z-index: 1000;
+}
+
+/* ----- SERVICES PAGE ----- */
+
+#services {
+	background-color: #a3f226;
+	/* Again, this gradient acts as a background */
+	box-shadow: inset 0 250px 600px #c5f972, 0px 0px 60px rgba(0, 0, 0, 0.4);
+}
+
+#services .content {
+	width: 80%;
+	margin: 0px auto;
+}
+
+#services .content div {
+	background-color: #f2fce1;
+	border: 2px solid #b3e361;
+	border-radius: 8px;
+	width: 30%;
+	height: 400px;
+	padding: 3%;
+	height: 60%;
+	float: left;
+	/* Border-box so borders dont affect width */
+	box-sizing: border-box;
+	margin-right: 3%;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+
+#services .content .box-2 {
+	position: relative;
+	z-index: 500;
+}
+#services .content a {
+	width: 100%;
+	background-color: #2caccb;
+	padding: 10px 0;
+	color: #fff;
+	font-family: 'Istok Web', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 6px;
+	display: block;
+	box-shadow: inset 0 10px 20px rgba(255,255,255,0.2);
+}
+
+#services .content a:hover {
+	box-shadow: inset 0 -10px 20px rgba(255,255,255,0.2);
+}
+
+#services a:active {
+	box-shadow: inset 0 -10px 20px rgba(255,255,255,0.2), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#services .content h2 {
+	margin: 0; padding: 0 0 10px 0;
+	border-bottom: 5px solid #e2ead0;
+	font-family: 'Istok Web', sans-serif;
+	text-transform: uppercase;
+	font-variant: normal;
+}
+
+#services .content p {
+	line-height: 20px;
+	font-size: 0.9em;
+	text-align: justify;
+	color: #656565;
+	text-decoration: none;
+}
+
+
+/* ----- CONTACT PAGE ----- */
+
+#contact .background {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#contact .background span {
+	border: 60px solid;
+	border-color: transparent transparent black transparent;
+	width: 0;
+	float: left;
+	height: 0;
+}
+
+#contact .background .layer {
+	position: absolute;
+	right: -60px;
+	bottom: 0;
+}
+
+#contact .background .layer:nth-of-type(2) { bottom: -60px; opacity: 0.88; }
+#contact .background .layer:nth-of-type(3) { bottom: 60px; right: -120px; opacity: 0.76; }
+#contact .background .layer:nth-of-type(4) { bottom: 0px; right: -120px; opacity: 0.64; }
+#contact .background .layer:nth-of-type(5) { bottom: 120px; opacity: 0.52; }
+#contact .background .layer:nth-of-type(6) { bottom: 60px; opacity: 0.40; }
+#contact .background .layer:nth-of-type(7) { bottom: 180px; right: -120px; opacity: 0.28; }
+#contact .background .layer:nth-of-type(8) { bottom: 120px; right: -120px; opacity: 0.14; }
+#contact .background .layer:nth-of-type(9) { bottom: 240px; opacity: 0.02; }
+
+#contact .background .layer:nth-child(even) span {
+	border-color: black transparent transparent transparent;
+}
+
+#contact {
+	background: #eee;
+	box-shadow: inset 0 250px 600px rgba(255,255,255,0.5);
+	position: relative;
+	overflow: hidden;
+}
+
+#contact .content {
+	position: relative;
+	top: 130px;
+	margin: 0px auto;
+	width: 75%;
+}
+
+
+#contact .form {
+	padding: 2%;
+	width: 96%;
+	box-sizing: border-box;
+	float: left;
+	box-shadow: 0 0 35px rgba(0,0,0,0.1);
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	position: relative;
+	z-index: 500;
+	font-family: Arial, sans-serif;
+}
+
+#contact .form-name input,
+#contact .form-email input,
+#contact .form-website input {
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: inset -1px 3px 10px rgba(0,0,0,0.05);
+	padding: 2%;
+	margin: 0;
+	font-size: 1.2em;
+	width: 66%;
+	box-sizing: border-box;
+}
+
+.form-text {
+	width: 80% !important;
+	box-shadow: 0px 8px 0px #ccc;
+	border-radius: 0 0 0 8px;
+}
+
+.form textarea {
+	background: #fff;
+	width: 100%;
+	padding: 0 4px 0 0;
+	float: left;
+	height: 121px;
+	padding: 2%;
+	font-size: 1.5em;
+	resize: none;
+	box-sizing: border-box;
+	display: block;
+	z-index: 500;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	border-right: 0;
+	border-radius: 8px 0 0 8px;
+	position: relative;
+}
+
+.form textarea:focus {
+	outline: 0;
+}
+
+#contact .form label {
+	display: block;
+	padding: 10px 0 0 0;
+	width: 20%;
+	color: #aaa;
+	font-weight: bold;
+	float: left;
+	text-decoration: none;
+}
+
+#contact .form-text label {
+	width: 100%;
+	margin: 0 0 15px 0;
+}
+
+#contact .submit {
+	float: left;
+	width: 30% !important;
+}
+
+#contact .form div {
+	margin: 10px 0;
+	width: 50%;
+	float: left;
+}
+
+#contact .form input:hover {
+	border: 1px solid #25abd8;
+}
+#contact .form input:focus {
+	outline: 0;
+	border: 1px solid #d82525;
+}
+
+#contact .submit input {
+	margin: 44px 0 0 0;
+	height: 121px;
+	width: 100% !important;
+	box-shadow: 0 8px 0 #1a6d8a;
+	background-color: #4bbae1;
+}
+
+#contact .submit input:active {
+	box-shadow: 0px 3px 0px #1a6d8a, inset 5px 0 10px rgba(0,0,0,0.1) !important;
+}
+#contact .submit {
+	width: 20% !important;
+}
+
+.submit {
+	position: relative;
+	height: 65px;
+}
+.submit input {
+	margin: 0;
+	width: 21%;
+	height: 100%;
+	font-weight: bold;
+	color: #fff;
+	font-size: 2em;
+	border: 0;
+	-webkit-appearance: none;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 8px 0px #cd5b0f;
+	border-radius: 0 8px 8px 0;
+	display: block;
+	position: relative;
+	padding: 5px 0 0;
+	background: #f38e4a;
+
+}
+
+.submit input:hover {
+	border: 0 !important;
+}
+
+.submit input:active, #contact .submit input:active {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 3px 0px #cd5b0f, inset 5px 0 10px rgba(0,0,0,0.1);
+	top: 5px;
+}
+
+/* For smaller screens */
+@media (max-width: 960px) {
+	.content { top: 160px !important; }
+	#about .content { margin: 0px auto; }
+	.is { display: none; }
+	#header h1 {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+	#header ul {
+		float: none;
+		margin: 0px auto;
+		width: 380px;
+		top: 10px;
+	}
+	#header ul li { padding-left: 0; }
+	#header ul li:last-of-type { padding-right: 0; }
+	#contact .form { padding: 4%; }
+	#contact .form div { width: 100%; }
+	#contact .form div input { width: 80%; }
+	#services .content { width: 95%; }
+	#services .content div {
+		margin: 0 2% 0 0;
+		width: 31%;
+	}
+}

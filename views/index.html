@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
+<title>Jemart Pacilan CMSC 126</title>
+
+<!-- Javascript -->
+<script rel="stylesheet" type="text/javascript" src="/static/stylesheets/jquery.js"></script>
+<script rel="stylesheet" type="text/javascript" src="/static/stylesheets/javascript.js"></script>
+<!-- /static/stylesheets/ -->
+
+<!-- Fonts and CSS -->
+<link rel="stylesheet" type="text/css" href="/static/stylesheets/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Istok+Web:700|Bree+Serif' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<!-- THE HEADER --->
+<div id="header">
+	<ul id="menu">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<!-- <li><a href="#services">Services</a></li> -->
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+
+</div>
+
+
+<!-- THE HOME PAGE -->
+<div data-full="true" id="home"></div>
+
+<!-- THE ABOUT PAGE -->
+<div data-full="true" id="about">
+<div class="content">
+		<h2>HI, I'M JEMART!</h2>
+    <p>A 20 year old lover of anything artsy and kick-ass</p>
+    <p>A lost soul swimming in fish bowl of codes and machines</p>
+    <p>But nevertheless, one hell of a bouncing ball of sunshine and happiness</p>
+    <p>The self proclaimed funny person to bring a laugh worth the century</p>
+</div>
+	<div class="background"></div>
+
+</div>
+
+<!-- THE SERVICES PAGE -->
+<!-- <div data-full="true" id="services">
+		<!-- <div class="box-1">
+			<h2>POTATOES</h2>
+			<p>Before we started writing articles for the web, InsertHTML was a small potato farm just off the south coast of Ireland</p>
+		</div>
+		<div class="box-2">
+			<h2>WEB DESIGN</h2>
+			<p>We write articles about web design! That's our main thing. We hope you like them. If you want to learn more click below!</p>
+			<a href="">LEARN MORE!</a>
+		</div>
+		<div class="box-3">
+			<h2>AEROSPACE</h2>
+			<p>Since January InsertHTML has been working hard with the US government to create a new type of fighter jet</p>
+		</div> -->
+</div> -->
+
+<!-- THE CONTACT PAGE -->
+<div data-full="true" id="contact">
+	<div class="content">
+		<div class="form">
+			<form action="/submit" method="post">
+				<div class="form-name">
+					<label for="name">NAME:</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="form-text">
+					<label for="comment">COMMENT:</label>
+					<textarea name="comment" id="comment"></textarea>
+				</div>
+				<div class="submit">
+					<input type="submit" name="submit" id="submit-contact" value="SUBMIT" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- <div class="background"></div> -->
+</div>
+
+
+<!-- SCRIPTS FOR THE SHARE BUTTONS -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</body>
+</html>
